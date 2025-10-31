@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: gnp2data
+    database: gnp2data
+    schema: gnp2data
+    tables:
+      - name: dim_clm_pbm_ntwk
+  - name: gnp2ods
+    database: gnp2ods
+    schema: gnp2ods
+    tables:
+      - name: ods_dir_orx_trans
+
+models:
+  - name: dbt_m_DIM_CLM_PBM_DIR_NTWK_ORX_INSERT 1.XML
+  - name: int_fil_new_records
+  - name: int_jnr_dummyjoin
+  - name: int_lkp_dim_pln_ntwk
+  - name: int_srt_ntwk_desc
+  - name: stg_sq_gnp2_lib_dim_clm_pbm_ntwk
+  - name: stg_sq_gnp2_lib_ods_dir_orx_trans
+  - name: stg_tgt_dim_clm_pbm_ntwk
+  - name: trans_exp_define_ntwk_id
+  - name: trans_exp_landling_zone
+  - name: trans_exp_landling_zone1
+  - name: yml_mapping variables
